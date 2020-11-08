@@ -82,6 +82,15 @@ nav a {
     font-size: .86rem;
 }
 
+nav label {
+    font-size: 1.4rem;
+    display: none;
+}
+
+#menu-toggle {
+    display: none;
+}
+
 .hero-content {
     display: flex;
     justify-content: center;
@@ -213,6 +222,57 @@ nav a {
 }
 
 
+
+/* Mobile menu */
+.mobile-menu {
+    width: 100%;
+    background: rgba(0,0,0,0.3);
+    position: fixed;
+    right: -100%;
+    top: 0;
+    height: 100%;
+    z-index: 100;
+    transition: right 500ms;
+}
+
+.menu-wrapper {
+    height: 100%;
+    width: 70%;
+    margin-left: auto;
+    background: #212529;
+    padding: 1rem 2rem;
+}
+
+.aside-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.socials-menu a {
+    margin-right: .7rem;
+    color: #fff;
+}
+
+.aside-header label {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.aside-content li {
+    margin-bottom: 1.4rem;
+}
+
+.aside-content li a {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.aside-content li:first-child a {
+    color: #0DD7F7;
+}
+
 @media only screen and (max-width: 1024px) {
     .work-grid {
         display: flex;
@@ -228,6 +288,18 @@ nav a {
 }
 
 @media only screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    
+    nav label {
+        display: inline-block;
+    }
+    
+    #menu-toggle:checked + .mobile-menu {
+        right: 0;
+    }
+    
     .hero-content h1 {
         font-size: 1.8rem;
         line-height: 2.5rem;
@@ -261,5 +333,16 @@ nav a {
     
     .work-image {
         margin-bottom: 2rem;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .wrapper {
+        width: 85%;
+    }
+    
+    .hero-content p {
+        text-align: center;
     }
 }
