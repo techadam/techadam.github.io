@@ -186,7 +186,7 @@ nav label {
 }
 
 .works {
-    padding: 3rem 0rem;
+    padding: 3rem 0rem 1rem 0rem;
     background: #F7FBFE
 }
 
@@ -221,7 +221,121 @@ nav label {
     font-weight: bold;
 }
 
+.contact-me {
+    padding: 3rem 0rem;
+}
 
+.contact-me h3 {
+    color: #4a4a4a;
+    margin-bottom: .2rem;
+}
+
+.contact-me h3 + small {
+    color: var(--color-main);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.contact-grid{
+    align-items: flex-start;
+}
+
+.contact-info h3 {
+    margin-bottom: 1.2rem;
+    color: #4a4a4a;
+}
+
+.contact-info-grid {
+    display: flex;
+}
+
+.contact-icon {
+    height: 50px;
+    width: 50px;
+    background: #0DD7F7;
+    color: #fff;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50% 10px 50% 50%;
+    margin-right: 1rem;
+    margin-bottom: 3.5rem;
+}
+
+.contact-info-grid small {
+    font-weight: 600;
+    color: var(--color-main);
+    display: inline-block;
+    margin-bottom: .4rem;
+    font-size: 1rem;
+}
+
+.contact-info-grid h2 {
+    font-weight: 100;
+    color: #555;
+}
+
+.social-contact {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    margin-top: .3rem;
+}
+
+.social-contact a {
+    margin-right: 1rem;
+    color: #333;
+    font-size: 1.3rem;
+}
+
+.contact-form-wrapper {
+    margin-top: 1rem;
+}
+
+.form-wrapper {
+    margin-bottom: 1rem;
+}
+
+.form-wrapper label {
+    margin-bottom: .5rem;
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+    color: #707070;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.form-wrapper input,
+.form-wrapper textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    width: 100%;
+    display: block;
+    padding: .7rem 1rem;
+    outline: none;
+}
+
+.form-wrapper input:focus,
+.form-wrapper textarea:focus {
+    border: 1px solid var(--color-main);
+}
+
+.form-wrapper input[type=email] {
+    margin-bottom: .5rem;
+    display: block;
+    height: 40px;
+}
+
+.contact-form-wrapper button {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.contact-me button {
+    font-weight: 600;
+}
 
 /* Mobile menu */
 .mobile-menu {
@@ -285,6 +399,10 @@ nav label {
     .work-image {
         margin-bottom: 2rem;
     }
+    
+    .contact-grid {
+        grid-template-columns: 100%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -297,7 +415,7 @@ nav label {
     }
     
     #menu-toggle:checked + .mobile-menu {
-        right: 0;
+        right: 0%;
     }
     
     .hero-content h1 {
