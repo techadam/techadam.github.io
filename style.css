@@ -178,8 +178,8 @@ nav label {
 }
 
 .skill img {
-    width: 100%;
-    margin-bottom: .2rem;
+    width: 50px !important;
+    margin-bottom: .5rem;
 }
 
 .grid-2x {
@@ -200,6 +200,7 @@ nav label {
 
 .work-image img {
     width: 80%;
+    border-radius: 8px;
 }
 
 .work-info h2 {
@@ -214,6 +215,17 @@ nav label {
     text-align: justify;
 }
 
+.work-tech {
+    margin-top: 1rem;
+}
+
+.work-tech span {
+    display: inline-block;
+    font-size: 1.8rem;
+    margin-right: 1rem;
+    color: var(--color-main);
+}
+
 .work-btn {
     margin-top: 1rem;
 }
@@ -223,6 +235,12 @@ nav label {
     margin-right: 1rem;
     font-size: .85rem;
     font-weight: bold;
+    transition: background 200ms;
+}
+
+.work-btn a:hover {
+    background: var(--color-main);
+    color: #fff;
 }
 
 .contact-me {
